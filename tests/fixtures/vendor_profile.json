@@ -1,0 +1,158 @@
+{
+ "statusCode": 200,
+ "message": "Success",
+ "data": {
+  "info": {
+   "vendorCode": "2y97wk",
+   "title": "فست فود مارچوبه",
+   "vendorStatus": "Close",
+   "minimumBasket": 300000,
+   "businessTypeId": 1,
+   "cityId": 2,
+   "eta": 55,
+   "address": {
+    "addressDetails": "میدان توحید، ابتدای ستارخان، نبش کوچه صیامی ، پلاک 39 ، (فست فود مارچوبه)",
+    "location": {
+     "latitude": 35.707,
+     "longitude": 51.376
+    }
+   }
+  },
+  "shift": {
+   "todayOperatingSchedule": {
+    "dayOfWeek": 1,
+    "workingHours": [
+     {
+      "startTime": "11:00:00",
+      "endTime": "23:45:00"
+     }
+    ]
+   },
+   "weeklySchedule": [
+    {
+     "dayOfWeek": 0,
+     "workingHours": [
+      {
+       "startTime": "11:00:00",
+       "endTime": "23:45:00"
+      }
+     ]
+    },
+    {
+     "dayOfWeek": 1,
+     "workingHours": [
+      {
+       "startTime": "11:00:00",
+       "endTime": "23:45:00"
+      }
+     ]
+    },
+    {
+     "dayOfWeek": 2,
+     "workingHours": [
+      {
+       "startTime": "11:00:00",
+       "endTime": "23:45:00"
+      }
+     ]
+    },
+    {
+     "dayOfWeek": 3,
+     "workingHours": [
+      {
+       "startTime": "11:00:00",
+       "endTime": "23:45:00"
+      }
+     ]
+    },
+    {
+     "dayOfWeek": 4,
+     "workingHours": [
+      {
+       "startTime": "11:00:00",
+       "endTime": "23:45:00"
+      }
+     ]
+    },
+    {
+     "dayOfWeek": 5,
+     "workingHours": [
+      {
+       "startTime": "11:00:00",
+       "endTime": "23:45:00"
+      }
+     ]
+    },
+    {
+     "dayOfWeek": 6,
+     "workingHours": [
+      {
+       "startTime": "11:00:00",
+       "endTime": "23:45:00"
+      }
+     ]
+    }
+   ]
+  },
+  "insight": {
+   "reviews": [
+    {
+     "vendorCode": "2y97wk",
+     "writerName": "نازآفرین طاهری",
+     "createdAt": "2026-10-18T09:10:30.85Z",
+     "orderRating": 5,
+     "orderItems": [
+      {
+       "productName": "پیتزا پپرونی ایتالیایی ( ۳۲ سانتی متری)",
+       "rating": 5,
+       "comment": "عالییی بود",
+       "replies": []
+      }
+     ]
+    },
+    {
+     "vendorCode": "2y97wk",
+     "writerName": "لیلا اسدی",
+     "createdAt": "2026-10-14T10:52:09.314Z",
+     "orderRating": 5,
+     "orderItems": [
+      {
+       "productName": "پیتزا بیف ماشروم ایتالیایی ( ۳۲ سانتی متری)",
+       "rating": 5,
+       "comment": "خوشمزه بود ممنون",
+       "replies": []
+      }
+     ]
+    },
+    {
+     "vendorCode": "2y97wk",
+     "writerName": "نگین حیدریان",
+     "createdAt": "2026-10-13T17:18:30.621Z",
+     "orderRating": 5,
+     "orderItems": [
+      {
+       "productName": "قارچ سوخاری",
+       "rating": 5,
+       "comment": "خیلی عالی و تازه بود فقط مشکل کم نمک بودنش بود",
+       "replies": []
+      },
+      {
+       "productName": "برگر با سس قارچ ",
+       "rating": 5,
+       "comment": "همه چی عالی بود سیب زمینی با اینکه سرخ شده بود فوق العاده چیپسی و کرانچی چقدر خوب که سس قارچ جدا هم سرو شده بود فقط تنها مشکل کم نمک بودن همه چی بود",
+       "replies": []
+      }
+     ]
+    }
+   ],
+   "rateDetails": {
+    "rate": 4.24492
+   }
+  },
+  "meta": {
+   "pageSize": 3,
+   "pageNumber": 0,
+   "total": 90
+  }
+ }
+}

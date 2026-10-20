@@ -1,0 +1,195 @@
+{
+ "statusCode": 200,
+ "message": "Search completed successfully",
+ "data": [
+  {
+   "id": "727124",
+   "queryId": "snd-product-37c6adfe5e7c40f8b184c008708e65b3",
+   "position": 1,
+   "productInfo": {
+    "name": "غذای کودک پیتزا",
+    "images": [],
+    "discountRatio": 0,
+    "price": 465000,
+    "priceAfterDiscount": 465000,
+    "headerId": 544341,
+    "id": "727124",
+    "rate": null,
+    "ratesCount": null,
+    "badges": []
+   },
+   "vendorInfo": {
+    "title": "فست فود نی کُپیما ",
+    "logo": "https://cdn.tapsi.food/vendor/product/28k4gr/64f45248-e5c5-4a97-b4ee-fc14bc3efa38.jpg",
+    "vendorCode": "28k4gr",
+    "deliveryPrice": 32000,
+    "deliveryType": "OfoodDelivery",
+    "vendorStatus": true,
+    "eta": 55,
+    "rate": 4.199999809265137,
+    "ratesCount": 658
+   },
+   "subDocs": null
+  },
+  {
+   "id": "1982323",
+   "queryId": "snd-product-37c6adfe5e7c40f8b184c008708e65b3",
+   "position": 2,
+   "productInfo": {
+    "name": "پیتزا پپرونی ایتالیایی ( ۳۲ سانتی متری)",
+    "images": [
+     "https://cdn.tapsi.food/vendor/product/2y97wk/f7333f9e-e319-4f75-8f1a-a12cd772597a.jpg"
+    ],
+    "discountRatio": 55,
+    "price": 1080000,
+    "priceAfterDiscount": 486000,
+    "headerId": 1472042,
+    "id": "1982323",
+    "rate": 3.799999952316284,
+    "ratesCount": 164,
+    "badges": []
+   },
+   "vendorInfo": {
+    "title": "فست فود مارچوبه",
+    "logo": "https://cdn.tapsi.food/vendor/product/2y97wk/9a193f34-1701-475b-ac1f-4f185f306c1c.jpg",
+    "vendorCode": "2y97wk",
+    "deliveryPrice": 61500,
+    "deliveryType": "OfoodDelivery",
+    "vendorStatus": true,
+    "eta": 55,
+    "rate": 4.155631065368652,
+    "ratesCount": 1767
+   },
+   "subDocs": null
+  },
+  {
+   "id": "1982316",
+   "queryId": "snd-product-37c6adfe5e7c40f8b184c008708e65b3",
+   "position": 3,
+   "productInfo": {
+    "name": "پیتزا بیکن ایتالیایی ( ۳۲ سانتی متری)",
+    "images": [
+     "https://cdn.tapsi.food/vendor/product/2y97wk/b601ad00-d03b-49ac-ae37-0fe1a99513fb.jpg"
+    ],
+    "discountRatio": 45,
+    "price": 1320000,
+    "priceAfterDiscount": 726000,
+    "headerId": 1472036,
+    "id": "1982316",
+    "rate": 4,
+    "ratesCount": 48,
+    "badges": []
+   },
+   "vendorInfo": {
+    "title": "فست فود مارچوبه",
+    "logo": "https://cdn.tapsi.food/vendor/product/2y97wk/9a193f34-1701-475b-ac1f-4f185f306c1c.jpg",
+    "vendorCode": "2y97wk",
+    "deliveryPrice": 61500,
+    "deliveryType": "OfoodDelivery",
+    "vendorStatus": true,
+    "eta": 55,
+    "rate": 4.1574177742004395,
+    "ratesCount": 1766
+   },
+   "subDocs": null
+  }
+ ],
+ "meta": {
+  "pageSize": 3,
+  "pageNumber": 1,
+  "totalItems": 607
+ },
+ "filters": [
+  {
+   "id": 0,
+   "key": "p-sort",
+   "name": "مرتب‌سازی",
+   "displayAsChip": false,
+   "icon": "List",
+   "isActive": true,
+   "sortOrder": 0,
+   "type": "radio",
+   "role": "sort",
+   "active": false,
+   "options": [
+    {
+     "key": "ratingdesc",
+     "name": "بالاترین امتیاز",
+     "active": false
+    },
+    {
+     "key": "mostpopular",
+     "name": "محبوب‌ترین",
+     "active": false
+    },
+    {
+     "key": "distance",
+     "name": "نزدیک‌ترین",
+     "active": false
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "key": "p-HasDiscount",
+   "name": "تخفیف‌دار",
+   "displayAsChip": false,
+   "icon": null,
+   "isActive": false,
+   "sortOrder": 0,
+   "type": "toggle",
+   "role": "filter",
+   "active": false,
+   "options": [
+    {
+     "key": "HasDiscount",
+     "name": "تخفیف‌دار",
+     "active": false
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "key": "p-deliveryType",
+   "name": "روش ارسال",
+   "displayAsChip": false,
+   "icon": null,
+   "isActive": false,
+   "sortOrder": 1,
+   "type": "tab",
+   "role": "filter",
+   "active": false,
+   "options": [
+    {
+     "key": "OfoodDelivery",
+     "name": "ارسال با پیک تپسی‌فود",
+     "active": false
+    },
+    {
+     "key": "OwnDelivery",
+     "name": "ارسال با پیک فروشگاه",
+     "active": false
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "key": "p-NewVendor",
+   "name": "فروشگاه‌های جدید",
+   "displayAsChip": false,
+   "icon": null,
+   "isActive": false,
+   "sortOrder": 2,
+   "type": "toggle",
+   "role": "filter",
+   "active": false,
+   "options": [
+    {
+     "key": "NewVendor",
+     "name": "فروشگاه‌های جدید",
+     "active": false
+    }
+   ]
+  }
+ ]
+}

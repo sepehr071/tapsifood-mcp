@@ -1,0 +1,452 @@
+{
+ "status": true,
+ "message": "",
+ "data": {
+  "vendor": {
+   "vendorCode": "2y97wk",
+   "vendorStatus": "Open",
+   "vendorHasInServiceState": true,
+   "title": "فست فود مارچوبه",
+   "minimumBasket": 400000,
+   "packingPrice": 0,
+   "tax": false,
+   "deliveryTypes": [
+    {
+     "deliveryType": "Ofood",
+     "deliveryPrice": 61500
+    }
+   ],
+   "shiftWork": "تا 23:45 هستیم",
+   "isInstallmentalPaymentActive": false,
+   "badges": [
+    {
+     "id": "45",
+     "title": "پرطرفدار",
+     "type": "OTHER",
+     "color": ""
+    }
+   ],
+   "discount": 55,
+   "mainImage": "https://cdn.tapsi.food/vendor/product/2y97wk/5243107f-0872-4f49-863d-9c51aa922d11.jpg",
+   "logo": "https://cdn.tapsi.food/vendor/product/2y97wk/9a193f34-1701-475b-ac1f-4f185f306c1c.jpg",
+   "businessTypeId": 1,
+   "cityId": 2,
+   "latitude": 35.7072,
+   "longitude": 51.3763,
+   "eta": 55
+  },
+  "review": {
+   "rateCount": 1757,
+   "commentCount": 0,
+   "rate": 4.2,
+   "distribution": {
+    "1": 203,
+    "2": 53,
+    "3": 111,
+    "4": 266,
+    "5": 1124
+   }
+  },
+  "vendorCarousels": [],
+  "categories": [
+   {
+    "categoryId": "189516",
+    "categoryName": "پیتزا ایتالیایی",
+    "products": [
+     {
+      "productId": "1472033",
+      "productRate": 0,
+      "productName": "پیتزا رست بیف ایتالیایی ( ۳۲ سانتی متری)",
+      "productDescription": "خمیر ایتالیایی، گوشت رست شده گوساله، قارچ، پنیر موزارلا، زیتون سیاه، سس مخصوص ",
+      "images": [
+       "https://cdn.tapsi.food/vendor/product/2y97wk/91eb6ac6-6bdf-47bd-9e0c-dbdedb481d21.jpg"
+      ],
+      "productVariations": [
+       {
+        "productVariationId": "1982313",
+        "productVariationName": "پیتزا رست بیف ایتالیایی ( ۳۲ سانتی متری)",
+        "productVariationDescription": null,
+        "price": 1400000,
+        "discountRatio": 0,
+        "priceAfterDiscount": 1400000,
+        "stock": 100,
+        "capacity": 10,
+        "vendorDiscountRatio": 0,
+        "tapsiFoodDiscountRatio": 0,
+        "discountStock": 0,
+        "mandatoryOptionCategoryIds": [],
+        "optionCategories": [
+         {
+          "optionCategoryId": "68884",
+          "optionCategoryName": "کارد و چنگال",
+          "capacity": 2,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "198816",
+            "optionName": "کارد",
+            "price": 3500
+           },
+           {
+            "optionId": "198817",
+            "optionName": "چنگال",
+            "price": 3500
+           }
+          ]
+         },
+         {
+          "optionCategoryId": "68955",
+          "optionCategoryName": "سس ساشه",
+          "capacity": 5,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "199009",
+            "optionName": "سس مایونز",
+            "price": 7000
+           },
+           {
+            "optionId": "199010",
+            "optionName": "سس کچاپ",
+            "price": 5000
+           },
+           {
+            "optionId": "199011",
+            "optionName": "سس کچاپ تند",
+            "price": 6000
+           },
+           {
+            "optionId": "199012",
+            "optionName": "سس فرانسوی",
+            "price": 9000
+           },
+           {
+            "optionId": "199013",
+            "optionName": "سس سیر",
+            "price": 11000
+           }
+          ]
+         }
+        ],
+        "sortIndex": 0
+       }
+      ]
+     },
+     {
+      "productId": "1472036",
+      "productRate": 4.1,
+      "productName": "پیتزا بیکن ایتالیایی ( ۳۲ سانتی متری)",
+      "productDescription": "خمیر ایتالیایی، بیکن 97 درصد، قارچ، پنیر موزارلا، زیتون سیاه، سس مخصوص ",
+      "images": [
+       "https://cdn.tapsi.food/vendor/product/2y97wk/b601ad00-d03b-49ac-ae37-0fe1a99513fb.jpg"
+      ],
+      "productVariations": [
+       {
+        "productVariationId": "1982316",
+        "productVariationName": "پیتزا بیکن ایتالیایی ( ۳۲ سانتی متری)",
+        "productVariationDescription": null,
+        "price": 1320000,
+        "discountRatio": 45,
+        "priceAfterDiscount": 726000,
+        "stock": 100,
+        "capacity": 10,
+        "vendorDiscountRatio": 35,
+        "tapsiFoodDiscountRatio": 10,
+        "discountStock": 79,
+        "mandatoryOptionCategoryIds": [],
+        "optionCategories": [
+         {
+          "optionCategoryId": "68884",
+          "optionCategoryName": "کارد و چنگال",
+          "capacity": 2,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "198816",
+            "optionName": "کارد",
+            "price": 3500
+           },
+           {
+            "optionId": "198817",
+            "optionName": "چنگال",
+            "price": 3500
+           }
+          ]
+         },
+         {
+          "optionCategoryId": "68955",
+          "optionCategoryName": "سس ساشه",
+          "capacity": 5,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "199009",
+            "optionName": "سس مایونز",
+            "price": 7000
+           },
+           {
+            "optionId": "199010",
+            "optionName": "سس کچاپ",
+            "price": 5000
+           },
+           {
+            "optionId": "199011",
+            "optionName": "سس کچاپ تند",
+            "price": 6000
+           },
+           {
+            "optionId": "199012",
+            "optionName": "سس فرانسوی",
+            "price": 9000
+           },
+           {
+            "optionId": "199013",
+            "optionName": "سس سیر",
+            "price": 11000
+           }
+          ]
+         }
+        ],
+        "sortIndex": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "categoryId": "189518",
+    "categoryName": "پیتزا آمریکایی",
+    "products": [
+     {
+      "productId": "1393244",
+      "productRate": 3.6,
+      "productName": "پیتزا چیکن آلفردو آمریکایی",
+      "productDescription": "خمیر پیتزای آمریکایی، مرغ مزه دار شده، سس آلفردو، قارچ، فلفل دلمه، پنیر موزارلا",
+      "images": [
+       "https://cdn.tapsi.food/vendor/product/2y97wk/1318288a-9b14-4d6b-b073-951666b29b3d.jpg",
+       "https://cdn.tapsi.food/vendor/product/2y97wk/b6bb9426-48e3-401e-93c2-1704fe8ccfb3.jpg"
+      ],
+      "productVariations": [
+       {
+        "productVariationId": "1864075",
+        "productVariationName": "21 سانتی متری",
+        "productVariationDescription": null,
+        "price": 800000,
+        "discountRatio": 0,
+        "priceAfterDiscount": 800000,
+        "stock": 100,
+        "capacity": 0,
+        "vendorDiscountRatio": 0,
+        "tapsiFoodDiscountRatio": 0,
+        "discountStock": 0,
+        "mandatoryOptionCategoryIds": [],
+        "optionCategories": [
+         {
+          "optionCategoryId": "68884",
+          "optionCategoryName": "کارد و چنگال",
+          "capacity": 2,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "198816",
+            "optionName": "کارد",
+            "price": 3500
+           },
+           {
+            "optionId": "198817",
+            "optionName": "چنگال",
+            "price": 3500
+           }
+          ]
+         },
+         {
+          "optionCategoryId": "68955",
+          "optionCategoryName": "سس ساشه",
+          "capacity": 5,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "199009",
+            "optionName": "سس مایونز",
+            "price": 7000
+           },
+           {
+            "optionId": "199010",
+            "optionName": "سس کچاپ",
+            "price": 5000
+           },
+           {
+            "optionId": "199011",
+            "optionName": "سس کچاپ تند",
+            "price": 6000
+           },
+           {
+            "optionId": "199012",
+            "optionName": "سس فرانسوی",
+            "price": 9000
+           },
+           {
+            "optionId": "199013",
+            "optionName": "سس سیر",
+            "price": 11000
+           }
+          ]
+         }
+        ],
+        "sortIndex": 1
+       },
+       {
+        "productVariationId": "2027951",
+        "productVariationName": "32 سانتی متری",
+        "productVariationDescription": null,
+        "price": 1400000,
+        "discountRatio": 0,
+        "priceAfterDiscount": 1400000,
+        "stock": 100,
+        "capacity": 10,
+        "vendorDiscountRatio": 0,
+        "tapsiFoodDiscountRatio": 0,
+        "discountStock": 0,
+        "mandatoryOptionCategoryIds": [],
+        "optionCategories": [
+         {
+          "optionCategoryId": "68884",
+          "optionCategoryName": "کارد و چنگال",
+          "capacity": 2,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "198816",
+            "optionName": "کارد",
+            "price": 3500
+           },
+           {
+            "optionId": "198817",
+            "optionName": "چنگال",
+            "price": 3500
+           }
+          ]
+         },
+         {
+          "optionCategoryId": "68955",
+          "optionCategoryName": "سس ساشه",
+          "capacity": 5,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "199009",
+            "optionName": "سس مایونز",
+            "price": 7000
+           },
+           {
+            "optionId": "199010",
+            "optionName": "سس کچاپ",
+            "price": 5000
+           },
+           {
+            "optionId": "199011",
+            "optionName": "سس کچاپ تند",
+            "price": 6000
+           },
+           {
+            "optionId": "199012",
+            "optionName": "سس فرانسوی",
+            "price": 9000
+           },
+           {
+            "optionId": "199013",
+            "optionName": "سس سیر",
+            "price": 11000
+           }
+          ]
+         }
+        ],
+        "sortIndex": 1
+       }
+      ]
+     },
+     {
+      "productId": "1393245",
+      "productRate": 3.2,
+      "productName": "پیتزا میکس اسپشیال آمریکایی (21 سانتی متری)",
+      "productDescription": "خمیر پیتزای آمریکایی 21 سانتی متری، ژامبون گوشت و مرغ، هات داگ، قارچ، زبتون سیاه، فلفل دلمه، پنیر موزارلا",
+      "images": [
+       "https://cdn.tapsi.food/vendor/product/2y97wk/69ca02c4-2116-452d-b811-372dff4a98e6.jpg",
+       "https://cdn.tapsi.food/vendor/product/2y97wk/65886dd8-9510-4da7-abf6-c61b3ad76bd9.jpg"
+      ],
+      "productVariations": [
+       {
+        "productVariationId": "1864076",
+        "productVariationName": "پیتزا میکس اسپشیال آمریکایی (21 سانتی متری)",
+        "productVariationDescription": null,
+        "price": 770000,
+        "discountRatio": 0,
+        "priceAfterDiscount": 770000,
+        "stock": 100,
+        "capacity": 0,
+        "vendorDiscountRatio": 0,
+        "tapsiFoodDiscountRatio": 0,
+        "discountStock": 0,
+        "mandatoryOptionCategoryIds": [],
+        "optionCategories": [
+         {
+          "optionCategoryId": "68884",
+          "optionCategoryName": "کارد و چنگال",
+          "capacity": 2,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "198816",
+            "optionName": "کارد",
+            "price": 3500
+           },
+           {
+            "optionId": "198817",
+            "optionName": "چنگال",
+            "price": 3500
+           }
+          ]
+         },
+         {
+          "optionCategoryId": "68955",
+          "optionCategoryName": "سس ساشه",
+          "capacity": 5,
+          "isMandatory": false,
+          "options": [
+           {
+            "optionId": "199009",
+            "optionName": "سس مایونز",
+            "price": 7000
+           },
+           {
+            "optionId": "199010",
+            "optionName": "سس کچاپ",
+            "price": 5000
+           },
+           {
+            "optionId": "199011",
+            "optionName": "سس کچاپ تند",
+            "price": 6000
+           },
+           {
+            "optionId": "199012",
+            "optionName": "سس فرانسوی",
+            "price": 9000
+           },
+           {
+            "optionId": "199013",
+            "optionName": "سس سیر",
+            "price": 11000
+           }
+          ]
+         }
+        ],
+        "sortIndex": 1
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

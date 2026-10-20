@@ -1,0 +1,203 @@
+{
+ "statusCode": 200,
+ "message": "Search completed successfully",
+ "data": [
+  {
+   "vendorCode": "5z68lm",
+   "queryId": "snd-vendor-19748f293fee4f10ba9f0a6b329c7c71",
+   "position": 1,
+   "vendorInfo": {
+    "title": "پیتزا کیوان",
+    "logo": "https://cdn.tapsi.food/vendor/product/5z68lm/5494e653-a8b8-4169-b37a-e12f339ed4ea.jpg",
+    "rate": 3.5999999046325684,
+    "ratesCount": 30,
+    "isOpen": true,
+    "eta": 55,
+    "deliveryType": "OfoodDelivery",
+    "deliveryPrice": 32000,
+    "vendorTags": [],
+    "badges": []
+   }
+  },
+  {
+   "vendorCode": "2xw186",
+   "queryId": "snd-vendor-19748f293fee4f10ba9f0a6b329c7c71",
+   "position": 2,
+   "vendorInfo": {
+    "title": "سوخاری کیلویی و پیتزا ژپتو",
+    "logo": "https://cdn.tapsi.food/vendor/product/2xw186/68f649d2-d0e7-4367-9557-7b5ebc54e072.jpg",
+    "rate": 3.5,
+    "ratesCount": 51,
+    "isOpen": true,
+    "eta": 55,
+    "deliveryType": "OfoodDelivery",
+    "deliveryPrice": 32000,
+    "vendorTags": [
+     {
+      "tagId": 47,
+      "title": "ارسال رایگان",
+      "status": "-",
+      "color": "",
+      "type": 3,
+      "rightIcon": "",
+      "image": "https://cdn.tapsi.food/vendor/app/new-site/tag/b86a01f0-542c-42ba-93ca-3426390c9079.svg",
+      "model": 2,
+      "isActive": true,
+      "showToUser": true,
+      "startDate": null,
+      "endDate": null,
+      "parentId": null
+     }
+    ],
+    "badges": [
+     {
+      "key": "47",
+      "name": "ارسال رایگان",
+      "color": null,
+      "rightIcon": null,
+      "image": "https://cdn.tapsi.food/vendor/app/new-site/tag/b86a01f0-542c-42ba-93ca-3426390c9079.svg"
+     }
+    ]
+   }
+  },
+  {
+   "vendorCode": "5nkng1",
+   "queryId": "snd-vendor-19748f293fee4f10ba9f0a6b329c7c71",
+   "position": 3,
+   "vendorInfo": {
+    "title": "پیتزا و ساندویچ تک ",
+    "logo": "https://cdn.tapsi.food/vendor/product/5nkng1/4ab3c4b8-b206-4121-b2b2-8903c91acc5d.jpg",
+    "rate": 4.125226974487305,
+    "ratesCount": 551,
+    "isOpen": true,
+    "eta": 55,
+    "deliveryType": "OfoodDelivery",
+    "deliveryPrice": 34000,
+    "vendorTags": [
+     {
+      "tagId": 47,
+      "title": "ارسال رایگان",
+      "status": "-",
+      "color": "",
+      "type": 3,
+      "rightIcon": "",
+      "image": "https://cdn.tapsi.food/vendor/app/new-site/tag/b86a01f0-542c-42ba-93ca-3426390c9079.svg",
+      "model": 2,
+      "isActive": true,
+      "showToUser": true,
+      "startDate": null,
+      "endDate": null,
+      "parentId": null
+     }
+    ],
+    "badges": [
+     {
+      "key": "47",
+      "name": "ارسال رایگان",
+      "color": null,
+      "rightIcon": null,
+      "image": "https://cdn.tapsi.food/vendor/app/new-site/tag/b86a01f0-542c-42ba-93ca-3426390c9079.svg"
+     }
+    ]
+   }
+  }
+ ],
+ "meta": {
+  "pageSize": 3,
+  "pageNumber": 1,
+  "totalItems": 8
+ },
+ "filters": [
+  {
+   "id": 0,
+   "key": "p-sort",
+   "name": "مرتب‌سازی",
+   "displayAsChip": false,
+   "icon": "List",
+   "isActive": true,
+   "sortOrder": 0,
+   "type": "radio",
+   "role": "sort",
+   "active": false,
+   "options": [
+    {
+     "key": "ratingdesc",
+     "name": "بالاترین امتیاز",
+     "active": false
+    },
+    {
+     "key": "mostpopular",
+     "name": "محبوب‌ترین",
+     "active": false
+    },
+    {
+     "key": "distance",
+     "name": "نزدیک‌ترین",
+     "active": false
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "key": "p-HasDiscount",
+   "name": "تخفیف‌دار",
+   "displayAsChip": false,
+   "icon": null,
+   "isActive": false,
+   "sortOrder": 0,
+   "type": "toggle",
+   "role": "filter",
+   "active": false,
+   "options": [
+    {
+     "key": "HasDiscount",
+     "name": "تخفیف‌دار",
+     "active": false
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "key": "p-deliveryType",
+   "name": "روش ارسال",
+   "displayAsChip": false,
+   "icon": null,
+   "isActive": false,
+   "sortOrder": 1,
+   "type": "tab",
+   "role": "filter",
+   "active": false,
+   "options": [
+    {
+     "key": "OfoodDelivery",
+     "name": "ارسال با پیک تپسی‌فود",
+     "active": false
+    },
+    {
+     "key": "OwnDelivery",
+     "name": "ارسال با پیک فروشگاه",
+     "active": false
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "key": "p-NewVendor",
+   "name": "فروشگاه‌های جدید",
+   "displayAsChip": false,
+   "icon": null,
+   "isActive": false,
+   "sortOrder": 2,
+   "type": "toggle",
+   "role": "filter",
+   "active": false,
+   "options": [
+    {
+     "key": "NewVendor",
+     "name": "فروشگاه‌های جدید",
+     "active": false
+    }
+   ]
+  }
+ ]
+}

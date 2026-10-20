@@ -1,0 +1,343 @@
+{
+ "meta": {
+  "pageSize": 5,
+  "pageNumber": 1,
+  "totalItems": 13
+ },
+ "config": null,
+ "content": [
+  {
+   "type": 0,
+   "component": {
+    "type": 1025,
+    "componentMeta": {
+     "title": null,
+     "description": "",
+     "options": {
+      "subtitle": "",
+      "enableCountdown": false,
+      "countdownEndsAt": null,
+      "viewMoreUrlOrSlug": "",
+      "videoUrl": "",
+      "bgBannerLink": ""
+     }
+    },
+    "config": null,
+    "items": [
+     {
+      "id": 0,
+      "key": "p-sort",
+      "name": "مرتب‌سازی",
+      "displayAsChip": false,
+      "icon": "List",
+      "isActive": true,
+      "sortOrder": 0,
+      "type": "radio",
+      "role": "sort",
+      "active": false,
+      "options": [
+       {
+        "key": "ratingdesc",
+        "name": "بالاترین امتیاز",
+        "active": false
+       },
+       {
+        "key": "mostpopular",
+        "name": "محبوب‌ترین",
+        "active": false
+       },
+       {
+        "key": "distance",
+        "name": "نزدیک‌ترین",
+        "active": false
+       }
+      ]
+     },
+     {
+      "id": 8,
+      "key": "p-deliveryType",
+      "name": "روش ارسال",
+      "displayAsChip": false,
+      "icon": null,
+      "isActive": false,
+      "sortOrder": 0,
+      "type": "tab",
+      "role": "filter",
+      "active": false,
+      "options": [
+       {
+        "key": "OfoodDelivery",
+        "name": "ارسال با پیک تپسی‌فود",
+        "active": false
+       },
+       {
+        "key": "OwnDelivery",
+        "name": "ارسال با پیک فروشگاه",
+        "active": false
+       }
+      ]
+     },
+     {
+      "id": 9,
+      "key": "p-NewVendor",
+      "name": "فروشگاه‌های جدید",
+      "displayAsChip": false,
+      "icon": null,
+      "isActive": false,
+      "sortOrder": 1,
+      "type": "toggle",
+      "role": "filter",
+      "active": false,
+      "options": [
+       {
+        "key": "NewVendor",
+        "name": "فروشگاه‌های جدید",
+        "active": false
+       }
+      ]
+     },
+     {
+      "id": 7,
+      "key": "p-HasDiscount",
+      "name": "تخفیف‌دار",
+      "displayAsChip": false,
+      "icon": null,
+      "isActive": false,
+      "sortOrder": 2,
+      "type": "toggle",
+      "role": "filter",
+      "active": false,
+      "options": [
+       {
+        "key": "HasDiscount",
+        "name": "تخفیف‌دار",
+        "active": false
+       }
+      ]
+     }
+    ]
+   },
+   "defaultFeedContent": null
+  },
+  {
+   "type": 0,
+   "component": {
+    "type": 1039,
+    "componentMeta": {
+     "title": null,
+     "description": "",
+     "options": {
+      "subtitle": "",
+      "enableCountdown": false,
+      "countdownEndsAt": null,
+      "viewMoreUrlOrSlug": "",
+      "videoUrl": "",
+      "bgBannerLink": ""
+     }
+    },
+    "config": null,
+    "items": [
+     {
+      "id": 3704,
+      "payload": {
+       "businessLineId": null,
+       "title": "غلات و حبوبات",
+       "subtitle": null,
+       "imageUrl": "https://cdn.tapsi.food/search-discovery/4b1e61f49a96462c82b7e4a839732c47-7_44x.webp",
+       "linkUrl": null,
+       "videoUrl": null,
+       "linkType": 1,
+       "pageSlug": null,
+       "price": null,
+       "badge": null,
+       "type": 1,
+       "contentId": 24
+      },
+      "pinned": false,
+      "filterValue": "1-24",
+      "isSelected": false
+     },
+     {
+      "id": 3705,
+      "payload": {
+       "businessLineId": null,
+       "title": "برنج",
+       "subtitle": null,
+       "imageUrl": "https://cdn.tapsi.food/search-discovery/fb3fdf780f664de898701afe5cc363b9-6_14x.webp",
+       "linkUrl": null,
+       "videoUrl": null,
+       "linkType": 1,
+       "pageSlug": null,
+       "price": null,
+       "badge": null,
+       "type": 1,
+       "contentId": 38
+      },
+      "pinned": false,
+      "filterValue": "1-38",
+      "isSelected": false
+     },
+     {
+      "id": 3708,
+      "payload": {
+       "businessLineId": null,
+       "title": "کنسرو",
+       "subtitle": null,
+       "imageUrl": "https://cdn.tapsi.food/search-discovery/b327f0de2b904358859182f287cff9bd-6_44x.webp",
+       "linkUrl": null,
+       "videoUrl": null,
+       "linkType": 1,
+       "pageSlug": null,
+       "price": null,
+       "badge": null,
+       "type": 1,
+       "contentId": 41
+      },
+      "pinned": false,
+      "filterValue": "1-41",
+      "isSelected": false
+     },
+     {
+      "id": 3709,
+      "payload": {
+       "businessLineId": null,
+       "title": "سس",
+       "subtitle": null,
+       "imageUrl": "https://cdn.tapsi.food/search-discovery/cfa0e10a3c264500ac9c60a3c088dc56-6_54x.webp",
+       "linkUrl": null,
+       "videoUrl": null,
+       "linkType": 1,
+       "pageSlug": null,
+       "price": null,
+       "badge": null,
+       "type": 1,
+       "contentId": 42
+      },
+      "pinned": false,
+      "filterValue": "1-42",
+      "isSelected": false
+     },
+     {
+      "id": 3711,
+      "payload": {
+       "businessLineId": null,
+       "title": "قند و شکر و نبات",
+       "subtitle": null,
+       "imageUrl": "https://cdn.tapsi.food/search-discovery/969fbb5488154a318f638ad2ff613c9b-6_74x.webp",
+       "linkUrl": null,
+       "videoUrl": null,
+       "linkType": 1,
+       "pageSlug": null,
+       "price": null,
+       "badge": null,
+       "type": 1,
+       "contentId": 44
+      },
+      "pinned": false,
+      "filterValue": "1-44",
+      "isSelected": false
+     },
+     {
+      "id": 3712,
+      "payload": {
+       "businessLineId": null,
+       "title": "تنقلات",
+       "subtitle": null,
+       "imageUrl": "https://cdn.tapsi.food/search-discovery/35937cc45d284c3d8436e0a1f91ccaf8-12_54x.webp",
+       "linkUrl": null,
+       "videoUrl": null,
+       "linkType": 1,
+       "pageSlug": null,
+       "price": null,
+       "badge": null,
+       "type": 1,
+       "contentId": 46
+      },
+      "pinned": false,
+      "filterValue": "1-46",
+      "isSelected": false
+     }
+    ]
+   },
+   "defaultFeedContent": null
+  },
+  {
+   "type": 1,
+   "component": null,
+   "defaultFeedContent": {
+    "vendorCode": "23no98",
+    "title": "خوار و بار شعاع ",
+    "vendorStatus": "Open",
+    "discount": 0,
+    "mainImage": "https://cdn.tapsi.food/vendor/product/23no98/8d03978e-ddf7-49dd-804b-de8f03d1f577.jpg",
+    "logo": "https://cdn.tapsi.food/vendor/product/23no98/bb3db790-1693-41c3-b3e4-78de2fbf44fb.jpg",
+    "businessTypeId": null,
+    "cityId": 2,
+    "deliveryType": "OfoodDelivery",
+    "deliveryPrice": 88500,
+    "minimumBasket": 300000.0,
+    "eta": 65,
+    "isInstallmentalPaymentActive": false,
+    "badges": [
+     {
+      "key": "50",
+      "name": "کوپن خرید",
+      "color": "#ac157a",
+      "rightIcon": null,
+      "image": "https://cdn.tapsi.food/vendor/app/new-site/tag/d5658204-c206-4345-beb5-e2459285136e.svg"
+     }
+    ],
+    "rate": 3.0999999046325684,
+    "ratesCount": 2,
+    "isNewVendor": false,
+    "categories": [
+     {
+      "id": 226641,
+      "name": "خواربار"
+     }
+    ],
+    "distance": 0,
+    "documentId": null,
+    "index": 0
+   },
+   "feedMeta": {
+    "totalItems": 10
+   }
+  },
+  {
+   "type": 1,
+   "component": null,
+   "defaultFeedContent": {
+    "vendorCode": "5m7w1w",
+    "title": "خوار و بار سینا",
+    "vendorStatus": "Closed",
+    "discount": 0,
+    "mainImage": "https://cdn.tapsi.food/vendor/product/5m7w1w/c07ee457-0ae5-4c68-a7a6-6e5018899805.jpg",
+    "logo": "https://cdn.tapsi.food/vendor/product/5m7w1w/82b1326d-b4b0-48f2-a525-b3c2fa2106b1.jpg",
+    "businessTypeId": null,
+    "cityId": 2,
+    "deliveryType": "OfoodDelivery",
+    "deliveryPrice": 54000,
+    "minimumBasket": 300000.0,
+    "eta": 65,
+    "isInstallmentalPaymentActive": false,
+    "badges": [],
+    "rate": 5.0,
+    "ratesCount": 1,
+    "isNewVendor": false,
+    "categories": [
+     {
+      "id": 232456,
+      "name": "برنج"
+     }
+    ],
+    "distance": 0,
+    "documentId": null,
+    "index": 1
+   },
+   "feedMeta": {
+    "totalItems": 10
+   }
+  }
+ ]
+}
