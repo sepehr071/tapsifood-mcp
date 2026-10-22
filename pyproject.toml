@@ -1,13 +1,13 @@
 [project]
 name = "tapsifood-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Unofficial read-only MCP server for Tapsi Food: search dishes and restaurants, read menus and reviews, find flash deals."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Sepehr Radmard", email = "sepehrr80@gmail.com" }]
 requires-python = ">=3.10"
-keywords = ["mcp", "model-context-protocol", "tapsi", "tapsifood", "iran", "food-delivery"]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "iran", "persian", "tapsi", "tapsifood", "tapsi-food", "food-delivery", "restaurants", "grocery-delivery", "ai-agents", "claude", "menu"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
