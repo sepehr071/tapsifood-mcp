@@ -1,6 +1,6 @@
 [project]
 name = "tapsifood-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "Unofficial read-only MCP server for Tapsi Food: search dishes and restaurants, read menus and reviews, find flash deals."
 readme = "README.md"
 license = "MIT"
