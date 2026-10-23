@@ -35,7 +35,7 @@ search dishes and restaurants near an address, read live menus and reviews, chec
 - **Coverage:** Tehran, Mashhad, Shiraz. Elsewhere the API answers 404 or `OutOfCoverage`.
 - **Output:** compact JSON. Prices in Toman, ratings 0-5. Null and empty fields are omitted (a missing `rating` = not rated). Menu descriptions are cut to 100 characters and review comments to 250 (`full_text: true` for the whole text). Replies stay under about 15 KB at the maximum `limit`.
 - **Machine-readable:** [`server.json`](https://github.com/sepehr071/tapsifood-mcp/blob/main/server.json) and the
-  [awesome-iran-mcp catalog](https://github.com/sepehr071/awesome-iran-mcp) (`TOOLS.md`, `servers.json`, `llms.txt`).
+  [iran-mcp catalog](https://github.com/sepehr071/iran-mcp) (`TOOLS.md`, `servers.json`, `llms.txt`).
 
 ## Why
 
@@ -379,7 +379,7 @@ to PyPI and the [MCP Registry](https://registry.modelcontextprotocol.io), and cr
 
 ## Related servers
 
-- [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp): catalog of all Iranian-service MCP servers
+- [iran-mcp](https://github.com/sepehr071/iran-mcp): catalog of all Iranian-service MCP servers
 - [Snapp MCP server](https://github.com/sepehr071/snapp-mcp) for Snappfood and SnappMarket food and grocery delivery
 - [Okala MCP server](https://github.com/sepehr071/okala-mcp) for online grocery shopping
 - [Digikala MCP server](https://github.com/sepehr071/digikala-mcp) for Iran's largest online store
@@ -392,9 +392,9 @@ app, which can change without notice. Please keep request rates reasonable.
 
 ## Author
 
-<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web. LinkedIn: linkedin.com/in/sepehr-radmard" width="100%"></a>
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web. LinkedIn: linkedin.com/in/sepehr-radmard" width="100%"></a>
 
-Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or follow [@sepehr071 on GitHub](https://github.com/sepehr071) for more MCP servers for Iranian websites, all listed in [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp). If this saves you time, a star on the repo helps other people find it.
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or follow [@sepehr071 on GitHub](https://github.com/sepehr071) for more MCP servers for Iranian websites, all listed in [iran-mcp](https://github.com/sepehr071/iran-mcp). If this saves you time, a star on the repo helps other people find it.
 
 ## License
 
