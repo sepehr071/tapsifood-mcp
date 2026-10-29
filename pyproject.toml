@@ -29,6 +29,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/sepehr071/tapsifood-mcp"
 Issues = "https://github.com/sepehr071/tapsifood-mcp/issues"
+Website = "https://mcpfarsi.ir/servers/tapsifood/"
 
 [project.scripts]
 tapsifood-mcp = "tapsifood_mcp.server:main"

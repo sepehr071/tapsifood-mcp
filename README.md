@@ -13,6 +13,7 @@ search dishes and restaurants near an address, read live menus and reviews, chec
 [![CI](https://github.com/sepehr071/tapsifood-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/sepehr071/tapsifood-mcp/actions/workflows/ci.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071%2Ftapsifood--mcp-7c3aed)](https://registry.modelcontextprotocol.io/?q=tapsifood-mcp)
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](https://github.com/sepehr071/tapsifood-mcp/blob/main/LICENSE)
+[![mcpfarsi](https://mcpfarsi.ir/badge/tapsifood.svg)](https://mcpfarsi.ir/servers/tapsifood/)
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_tapsifood--mcp-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=tapsifood&config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22tapsifood-mcp%22%5D%7D)
 
@@ -384,6 +385,7 @@ to PyPI and the [MCP Registry](https://registry.modelcontextprotocol.io), and cr
 - [Okala MCP server](https://github.com/sepehr071/okala-mcp) for online grocery shopping
 - [Digikala MCP server](https://github.com/sepehr071/digikala-mcp) for Iran's largest online store
 - [Torob MCP server](https://github.com/sepehr071/torob-mcp) for price comparison across Iranian shops
+- Listed on [mcpfarsi.ir](https://mcpfarsi.ir/servers/tapsifood/), the Persian MCP marketplace
 
 ## Disclaimer
 
