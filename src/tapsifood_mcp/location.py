@@ -10,8 +10,8 @@ from pydantic import Field
 from .http import fetch
 from .registry import tool
 
-Lat = Annotated[float, Field(ge=24, le=40, description="Delivery point latitude, e.g. 35.7577.")]
-Long = Annotated[float, Field(ge=44, le=64, description="Delivery point longitude, e.g. 51.4095.")]
+Lat = Annotated[float, Field(ge=24, le=40, description="Delivery latitude, e.g. 35.7577.")]
+Long = Annotated[float, Field(ge=44, le=64, description="Delivery longitude, e.g. 51.4095.")]
 
 # Tehran center, used to bias place search when no point is given.
 TEHRAN = (35.6892, 51.389)
@@ -32,17 +32,13 @@ async def tf_find_location(
         str,
         Field(min_length=2, description="Place, street or landmark, e.g. 'میدان ونک'."),
     ],
-    near_lat: Annotated[
-        float | None, Field(description="Bias latitude (e.g. a city center from tf_list_cities).")
-    ] = None,
+    near_lat: Annotated[float | None, Field(description="Bias latitude, e.g. a city center.")] = None,
     near_long: Annotated[float | None, Field(description="Bias longitude.")] = None,
-    limit: Annotated[int, Field(ge=1, le=20, description="Max places to return.")] = 5,
+    limit: Annotated[int, Field(ge=1, le=20, description="Max places.")] = 5,
 ) -> dict[str, Any]:
     """Turn a place name or address into latitude/longitude.
 
-    Use first when the user gives an address; every other tf_* tool needs lat/long.
-    Biased toward near_lat/near_long (default Tehran): pass a city center for other cities.
-    A found place can still be outside Tapsi Food's delivery area (tf_list_cities).
+    Use first when the user gives an address. Biased toward near_lat/near_long (default Tehran).
     """
     if (near_lat is None) != (near_long is None):
         raise ToolError("Give both near_lat and near_long (or neither, which biases toward Tehran).")
@@ -65,10 +61,7 @@ async def tf_find_location(
 
 @tool("Describe coordinates")
 async def tf_reverse_geocode(lat: Lat, long: Long) -> dict[str, Any]:
-    """Describe coordinates as an address with province and city.
-
-    Use to confirm a delivery point with the user before searching.
-    """
+    """Describe coordinates as an address with province and city."""
     body = await fetch(
         "/v1/api/Map/geocode/reverse", {"subdivision": "true", "local_address": "true", "location": f"{long},{lat}"}
     )
@@ -88,8 +81,7 @@ async def tf_list_cities(
 ) -> dict[str, Any]:
     """List the cities Tapsi Food shows, with a center point and whether it delivers there.
 
-    Use the center as a rough delivery point when the user only names a city. Static snapshot
-    (2026-10-19): the site has no city API, and unserved cities return no restaurants.
+    Use the center as a rough delivery point when the user only names a city. Static snapshot.
     """
     q = (query or "").strip().lower()
     return {"cities": [c for c in CITIES if q in c["title"] or q in c["code"]]}

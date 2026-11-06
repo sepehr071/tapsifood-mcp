@@ -11,7 +11,7 @@ from .location import Lat, Long
 from .registry import tool
 
 Query = Annotated[str, Field(min_length=2, description="Dish or restaurant word, e.g. 'پیتزا'.")]
-Page = Annotated[int, Field(ge=1, le=50, description="Page number, from 1.")]
+Page = Annotated[int, Field(ge=1, le=50, description="Page, from 1.")]
 
 FEED = "/v1/api/search-discovery/page-content/"
 SEARCH = "/v1/api/search-discovery/Search/"
@@ -67,20 +67,17 @@ async def tf_search_dishes(
     sort: Annotated[
         Literal["relevance", "cheapest", "biggest_discount", "top_rated", "nearest"],
         Field(
-            description="Order of the results; cheapest / biggest_discount / top_rated sort the first 100 matches "
-            "(top_rated = dish rating, then restaurant rating; unrated last). nearest is Tapsi's own order."
+            description="cheapest / biggest_discount / top_rated sort the first 100 matches; nearest is Tapsi's order."
         ),
     ] = "relevance",
     discounted_only: Annotated[bool, Field(description="Only dishes with a discount.")] = False,
     page: Page = 1,
-    limit: Annotated[int, Field(ge=1, le=40, description="Max dishes (40 keeps the reply under 15 KB).")] = 10,
+    limit: Annotated[int, Field(ge=1, le=40, description="Max dishes.")] = 10,
 ) -> dict[str, Any]:
     """Search dishes by name near a delivery point, with price, discount and restaurant.
 
-    Use for "find X near me" or "cheapest / discounted X". Prices are the search index's and can lag
-    the menu: confirm with tf_menu before recommending. Then call tf_vendor_info for fee and minimum order.
-    Tapsi's search lists only restaurants open now: at night total can be 0 (the site shows the same);
-    tf_restaurants / tf_discounted_vendors also list closed vendors.
+    Use for "find X near me" or "cheapest / discounted X". Prices can lag the menu: confirm with tf_menu.
+    Lists only restaurants open now (total can be 0 at night); tf_restaurants also lists closed ones.
     """
     pooled = sort in ("cheapest", "biggest_discount", "top_rated")  # the API ignores ratingdesc for dishes
     filters = ["HasDiscount"] if discounted_only else []
@@ -106,7 +103,8 @@ async def tf_search_dishes(
         dishes.sort(key=lambda d: (-(d["rating"] or 0), -(d["vendor_rating"] or 0)))
     if pooled:  # the pool is page 1 of 100 hits; slice the requested page out of it
         dishes = dishes[(page - 1) * limit :]
-    return {"total": body["meta"]["totalItems"], "dishes": dishes[:limit]}
+    dishes = [{**d, "discount_pct": d["discount_pct"] or None} for d in dishes[:limit]]  # missing = no discount
+    return {"total": body["meta"]["totalItems"], "dishes": dishes}
 
 
 @tool("Search vendors")
@@ -120,7 +118,7 @@ async def tf_search_vendors(
     """Search restaurants and stores by name or cuisine near a delivery point.
 
     Use to find a vendor code by name. No dish prices: use tf_menu or tf_search_dishes.
-    Tapsi's search lists only restaurants open now (total 0 at night, as on the site); tf_restaurants also lists closed ones.
+    Lists only restaurants open now; tf_restaurants also lists closed ones.
     """
     body = await fetch(
         SEARCH + "vendor-search",
@@ -179,32 +177,28 @@ async def tf_restaurants(
     lat: Lat,
     long: Long,
     kind: Annotated[
-        Literal["restaurants", "groceries"], Field(description="restaurants, or grocery stores (خواربار).")
+        Literal["restaurants", "groceries"], Field(description="restaurants or grocery stores.")
     ] = "restaurants",
     category: Annotated[
         str | None,
-        Field(description="Cuisine chip filter from the 'categories' of a page-1 result, e.g. '1-82' (kebab)."),
+        Field(description="Cuisine chip from 'categories' of page 1, e.g. '1-82'."),
     ] = None,
     sort: Annotated[
-        Literal["default", "top_rated", "popular", "nearest"], Field(description="Order of the results.")
+        Literal["default", "top_rated", "popular", "nearest"], Field(description="Result order.")
     ] = "default",
     discounted_only: Annotated[bool, Field(description="Only vendors with a discount.")] = False,
-    delivery: Annotated[
-        Literal["any", "tapsi", "vendor"], Field(description="Courier: Tapsi's own, or the vendor's.")
-    ] = "any",
+    delivery: Annotated[Literal["any", "tapsi", "vendor"], Field(description="Courier type.")] = "any",
     new_only: Annotated[bool, Field(description="Only new vendors.")] = False,
     page: Page = 1,
     page_size: Annotated[
         int,
-        Field(
-            ge=5, le=50, description="Feed items per page; page 1 spends some on widgets, so it lists fewer vendors."
-        ),
+        Field(ge=5, le=50, description="Feed items per page; page 1 lists fewer (widgets)."),
     ] = 20,
 ) -> dict[str, Any]:
     """List restaurants (or grocery stores) delivering to a point, with rating, delivery fee, minimum order and ETA.
 
-    Use to browse or rank vendors. Page 1 also returns 'categories' (cuisine filters for the category param).
-    No dish prices: use tf_menu. Returns 404 outside the served cities (tf_list_cities).
+    Use to browse or rank vendors. Page 1 also returns 'categories' (values for category).
+    No dish prices: use tf_menu. 404 outside served cities.
     """
     sort_key = {"top_rated": "ratingdesc", "popular": "mostpopular", "nearest": "distance"}.get(sort)
     slug = "business-line-15" if kind == "restaurants" else "business-line-7"
@@ -223,19 +217,18 @@ async def tf_deals(
     long: Long,
     sort: Annotated[
         Literal["default", "most_discounted", "most_purchased", "cheapest", "top_rated"],
-        Field(description="Order of the deals."),
+        Field(description="Deal order."),
     ] = "most_discounted",
-    category: Annotated[str | None, Field(description="Cuisine chip filter from 'categories', e.g. '1-82'.")] = None,
+    category: Annotated[str | None, Field(description="Same as tf_restaurants.")] = None,
     page: Page = 1,
     page_size: Annotated[
         int,
-        Field(ge=5, le=50, description="Feed items per page; page 1 spends some on widgets, so it lists fewer deals."),
+        Field(ge=5, le=50, description="Same as tf_restaurants."),
     ] = 20,
 ) -> dict[str, Any]:
     """List the Tap Time flash deals (تپ تایم): discounted dishes with a limited stock, near a point.
 
-    Use for "today's best deals". Not the same as Snappfood's FoodParty. Check stock_left, it runs out.
-    Then tf_menu / tf_vendor_info for the restaurant.
+    Use for "today's best deals". Check stock_left, it runs out.
     """
     sort_key = {
         "most_discounted": "mostdiscounted",
@@ -273,20 +266,17 @@ async def tf_discounted_vendors(
     lat: Lat,
     long: Long,
     sort: Annotated[
-        Literal["default", "top_rated", "popular", "nearest"], Field(description="Order of the results.")
+        Literal["default", "top_rated", "popular", "nearest"], Field(description="Result order.")
     ] = "default",
     page: Page = 1,
     page_size: Annotated[
         int,
-        Field(
-            ge=5, le=50, description="Feed items per page; page 1 spends some on widgets, so it lists fewer vendors."
-        ),
+        Field(ge=5, le=50, description="Feed items per page; page 1 lists fewer (widgets)."),
     ] = 20,
 ) -> dict[str, Any]:
     """List the vendors in Tapsi Food's 'Food Shots' (فودشات) discount campaign near a point.
 
-    Use for "which restaurants have the biggest discount". discount_pct is the vendor-wide percentage.
-    The campaign is curated, so not every discounted vendor is in it (tf_restaurants with discounted_only is wider).
+    Use for "which restaurants have the biggest discount". The campaign is curated; tf_restaurants with discounted_only is wider.
     """
     sort_key = {"top_rated": "ratingdesc", "popular": "mostpopular", "nearest": "distance"}.get(sort)
     f = await _feed("فودشات", lat, long, _filters(sort_key, False, "any", False, None), page, page_size)
