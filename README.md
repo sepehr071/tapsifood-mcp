@@ -17,7 +17,7 @@ search dishes and restaurants near an address, read live menus and reviews, chec
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_tapsifood--mcp-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=tapsifood&config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22tapsifood-mcp%22%5D%7D)
 
-[For AI agents](#for-ai-agents) · [Why](#why) · [What it can do](#what-it-can-do) · [Quick start](#quick-start) · [Tools](#tools) · [How it works](#how-it-works) · [Good to know](#good-to-know) · [FAQ](#faq) · [Configuration](#configuration) · [فارسی](#فارسی) · [Development](#development) · [Related](#related-servers)
+[For AI agents](#for-ai-agents) · [Why](#why) · [What it can do](#what-it-can-do) · [Quick start](#quick-start) · [Tools](#tools) · [Good to know](#good-to-know) · [FAQ](#faq) · [Configuration](#configuration) · [فارسی](#فارسی) · [Development](#development) · [Related](#related-servers)
 
 </div>
 
@@ -202,24 +202,6 @@ Start with a place: `tf_find_location` or `tf_list_cities` give the `lat` and `l
 </details>
 
 All 11 tools are annotated `readOnlyHint: true` and return compact JSON.
-
-## How it works
-
-```text
-  AI agent  (Claude, Cursor, Copilot, ...)
-      │
-      │  MCP over stdio
-      ▼
-  tapsifood-mcp  (runs on your machine)
-      │
-      │  HTTPS
-      └──────▶  api.tapsi.food   dishes, vendors, menus, reviews, deals
-```
-
-`tapsifood-mcp` runs locally and calls the same endpoints the tapsi.food web app uses. There is no hosted server in
-between and no API key. Requests go out through a Chrome-impersonating client, at most 2 at a time with a little
-jitter. GET answers are cached for 60 seconds, a timeout, network error, 5xx or 429 is retried up to twice, and it
-only talks to `api.tapsi.food`. It only reads.
 
 ## Good to know
 
